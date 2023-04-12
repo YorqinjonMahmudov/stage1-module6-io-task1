@@ -25,7 +25,7 @@ public class FileReader {
             }
             return profile;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new MyException(e.getMessage());
         }
     }
 }
